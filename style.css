@@ -1,0 +1,148 @@
+.navbar-nav .nav-item .nav-link {
+    color: azure;
+    font: caption;
+}
+
+.navbar .btn:hover {
+    color: grey;
+}
+
+.carousel-inner {
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.carousel-inner .lead {
+    color: aqua;
+}
+
+.carousel-inner .carousel-caption {
+    background-color: #555550;
+    opacity: 0.95;
+    color: azure;
+}
+
+section#itinerary-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+section#final-schedule .list-group-item {
+    padding: 10px 0px;
+    font-size: large;
+}
+
+section#final-schedule .bi {
+    font-size: large;
+}
+
+section#aboutme-section {
+    padding-top: 125px;
+}
+
+section#aboutme-section div#aboutme-img {
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+section#aboutme-section div#aboutme-body {
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+div#faq {
+    padding-top: 100px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+div#faq .accordion-header {
+    font: caption;
+    font-size: large;
+}
+
+div#hobbies {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+div#hobbies .list-group-item {
+    border: 0px;
+    color: aliceblue;
+}
+
+
+div#research {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+div#research .list-group-item {
+    border: 0px;
+    color: aliceblue;
+}
+
+div#youtube-video {
+    padding-top: 150px;
+    padding-bottom: 75px;
+}
+
+.embed-responsive {
+    width: 640;
+}
+
+div#album {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+div#album .card{
+    border: 5px solid gray;
+}
+
+div#p1 {
+    padding-top: 150px;
+    padding-bottom: 25px;
+}
+
+div#p1 .card-img {
+    border: 3px solid gray;
+}
+
+div#p1 .btn {
+    display: flex;
+    margin: auto;
+    margin-top: 15%;
+}
+
+div#p2 {
+    padding-top: 150px;
+    padding-bottom: 25px;
+}
+
+div#p2 .card-img {
+    border: 3px solid gray;
+}
+
+div#p2 .btn {
+    display: flex;
+    margin: auto;
+    margin-top: 10%;
+}
+
+div#p3 {
+    padding-top: 150px;
+    padding-bottom: 25px;
+}
+
+div#p3 .card-img {
+    border: 3px solid gray;
+}
+
+div#p3 .btn {
+    display: flex;
+    margin: auto;
+    margin-top: 15%;
+}

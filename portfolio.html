@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <title>Portfolio</title>
+
+    <link rel="icon" href="img/logo.png">
+
+</head>
+
+    <!--Navigation bar at the top of the page-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="home.html" class="navbar-brand">
+                <img src="img/logo.png" alt="logo" width="50" height="50" class="img-fluid">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <!--List of links on the navbar-->
+                <ul class="navbar-nav me-auto ms-4">
+                    <li class="nav-item">
+                        <a href="home.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="aboutme.html" class="nav-link">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="portfolio.html" class="nav-link">Portfolio</a>
+                    </li>
+                </ul>
+                <!--Button that is linked to the sign up modal-->
+                <button type="button" class="btn btn-light ms-auto" data-bs-toggle="modal" data-bs-target="#signup">
+                    Sign up
+                </button>
+            </div>
+        </div>
+    </nav>
+
+       <!--Modal-->
+       <div class="modal fade" id="signup" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!--Sign up button on the navigation bar-->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupLabel">Sign up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">
+                        You can sign up to Bro Network by filling out this form.
+                    </p>
+                    <form>
+                        <!--Get email input from user-->
+                        <div class="mb-3">
+                            <label for="email" class="col-form-label">Email</label>
+                            <input type="text" class="form-control" id="email">
+                        </div>
+                        <!--Get password input from user-->
+                        <div class="mb-3">
+                            <label for="password" class="col-form-label">Password</label>
+                            <input type="text" class="form-control" id="password">
+                        </div>
+                    </form>
+                </div>
+                <!--Terms and Conditions - Close and Submit button-->
+                <div class="modal-footer">
+                    <div class="row">
+                        <div class="col-md">
+                            <p>By filling out this form, you guarantee that you will abide with Bro Code.</p>
+                        </div>
+                        <div class="col-md m-auto ms-5">
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-dark" data-bs-dismiss="modal">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Embedded video from Youtube-->
+    <section>
+        <div class="container"  id="youtube-video">
+            <div class="row">
+                <!--Video to the left-->
+                <div class="col-md">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe
+                            class="embed-responsive-item"
+                            src="https://www.youtube.com/embed/I1dQI4Gjt9I?start=20"
+                            allowfullscreen=""
+                            width="100%"
+                            height="360">
+                        </iframe>
+                    </div>
+                </div>
+                <!--Info box - or card-->
+                <div class="col-md">
+                    <div class="card">
+                        <div class="card-body">
+                          <h3 class="card-title">Alvvays - Ones Who Love You (Live on KEXP)</h4>
+                          <p class="card-text lead">
+                            <a href="http://KEXP.ORG"> <br>
+                            http://KEXP.ORG</a> presents Alvvays performing "Ones Who Love You" live in the KEXP studio. <br>
+                            <br>
+                            Recorded December 2, 2014. <br>
+                            <br>
+                            Host: Cheryl Waters, Audio Engineer: Kevin Suggs <br>
+                            Cameras: Jim Beckmann, Scott Holpainen & Justin Wilmore <br>
+                            Editor: Luke Knecht <br>
+                            </p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Album-->
+    <section class="bg-dark">
+        <div class="container" id="album">
+            <h1 class="text-light text-center pb-5">Album of Not-My-Work</h1>
+            <div class="row">
+                <!--Product 1-->
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <a href="product/p1.html">
+                            <img class="card-img-top" src="img/alpha.png" alt="alpha">
+                        </a>
+                        <div class="card-body">
+                          <h5 class="card-title text-info">Alpha Signal Flag</h5>
+                            <p class="card-text lead">
+                              ICS meaning as single flag: 
+                              I have a diver down; keep well clear at slow speed.
+                            </p>
+                          <a href="product/p1.html" class="btn btn-info text-light">Product Page</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Product 2-->
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <a href="product/p2.html">
+                            <img class="card-img-top" src="img/bravo.png" alt="bravo">
+                        </a>
+                        <div class="card-body">
+                          <h5 class="card-title text-info">Bravo Signal Flag</h5>
+                          <p class="card-text lead">
+                            ICS meaning as single flag: 
+                            I am taking in or discharging or carrying dangerous goods.
+                          </p>
+                          <a href="product/p2.html" class="btn btn-info text-light">Product Page</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Product 3-->
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <a href="product/p3.html">
+                            <img class="card-img-top" src="img/charlie.png" alt="charlie">
+                        </a>
+                        <div class="card-body">
+                          <h5 class="card-title text-info">Charlie Signal Flag</h5>
+                          <p class="card-text lead">
+                            ICS meaning as single flag: 
+                            Affirmative, Yes, Confirmed.
+                          </p>
+                          <a href="product/p3.html" class="btn btn-info text-light">Product Page</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <div class="container bg-dark text-light">
+    <footer class="d-flex sjustify-content-between align-items-center py-3 my-3">
+      <p class="col-md mb-0 text-secondary">&copy; 2022 Cem Reis</p>
+  
+      <a href="#" class="ms-auto">
+        <img src="img/logo.png" alt="logo" class="img-fluid me-5" width="50" height="50">
+      </a>
+  
+      <ul class="nav col-md justify-content-end">
+        <li class="nav-item px-2">
+            <a href="https://github.com/cemreis0" target="_blank">
+                <i class="bi bi-github"></i>
+            </a>
+        </li>
+        <li class="nav-item px-2">
+            <a href="https://www.linkedin.com/in/cem-reis-829b7a1b3/" target="_blank">
+                <i class="bi bi-linkedin"></i>
+            </a>
+        </li>
+        <li class="nav-item px-2">
+            <a href="https://twitter.com/cemmreis" target="_blank">
+                <i class="bi bi-twitter"></i>
+            </a>
+        </li>
+        <li class="nav-item px-2">
+            <a href="https://www.instagram.com/cemreis0/?hl=tr" target="_blank">
+                <i class="bi bi-instagram"></i>
+            </a>
+        </li>
+        <li class="nav-item px-2">
+            <a href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=CllgCJlFCsrWfrgHPjzqrCHrLGjxmjvGpLsTHNFtVbZFGhTjFTgGvCsGWCXxqDfZpSZbxVKCkDB" target="_blank">
+                <i class="bi bi-envelope"></i>
+            </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous">
+</script>
+
+</body>
+
+</html>

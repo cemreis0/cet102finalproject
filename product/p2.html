@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <link
+        rel="stylesheet"
+        href="../style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <title>Bravo Signal Flag</title>
+
+    <link rel="icon" href="../img/logo.png">
+
+</head>
+
+    <!--Navigation bar at the top of the page-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="../home.html" class="navbar-brand">
+                <img src="../img/logo.png" alt="logo" width="50" height="50" class="img-fluid">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <!--List of links on the navbar-->
+                <ul class="navbar-nav me-auto ms-4">
+                    <li class="nav-item">
+                        <a href="../home.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../aboutme.html" class="nav-link">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../portfolio.html" class="nav-link">Portfolio</a>
+                    </li>
+                </ul>
+                <!--Button that is linked to the sign up modal-->
+                <button type="button" class="btn btn-light ms-auto" data-bs-toggle="modal" data-bs-target="#signup">
+                    Sign up
+                </button>
+            </div>
+        </div>
+    </nav>
+
+   <!--Modal-->
+   <div class="modal fade" id="signup" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!--Sign up button on the navigation bar-->
+            <div class="modal-header">
+                <h5 class="modal-title" id="signupLabel">Sign up</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p class="lead">
+                    You can sign up to Bro Network by filling out this form.
+                </p>
+                <form>
+                    <!--Get email input from user-->
+                    <div class="mb-3">
+                        <label for="email" class="col-form-label">Email</label>
+                        <input type="text" class="form-control" id="email">
+                    </div>
+                    <!--Get password input from user-->
+                    <div class="mb-3">
+                        <label for="password" class="col-form-label">Password</label>
+                        <input type="text" class="form-control" id="password">
+                    </div>
+                </form>
+            </div>
+            <!--Terms and Conditions - Close and Submit button-->
+            <div class="modal-footer">
+                <div class="row">
+                    <div class="col-md">
+                        <p>By filling out this form, you guarantee that you will abide with Bro Code.</p>
+                    </div>
+                    <div class="col-md m-auto ms-5">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-dark" data-bs-dismiss="modal">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Product-->
+<section>
+    <div class="container" id="p2">
+        <div class="d-flex align-items-end justify-content-end">
+            <div class="row">
+              <div class="col-md">
+                <img src="../img/bravo.png" class="card-img" alt="bravo">
+              </div>
+              <div class="col-md">
+                <div class="card-body">
+                  <h3 class="card-title">Bravo Signal Flag</h3>
+                  <p class="card-text lead"> <br>
+                    Blazon: Swallowtailed, gules <br>
+                    <br>
+                    International Code of Signals meaning as single flag: I am taking in or discharging or carrying dangerous goods.
+                    (Originally used by the Royal Navy specifically for military explosives.) <br>
+                    <br>
+                    Meaning when used with numeric components: Azimuth or bearing <br>
+                  </p>
+                </div>
+                <button type="button" class="btn btn-info text-light ms-auto" data-bs-toggle="modal" data-bs-target="#buynow">
+                    Buy now
+                </button>
+              </div>
+            </div>
+          </div>
+    </div>
+</section>
+
+<!--Pricing Modal-->
+<div class="modal fade" id="buynow" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <!--Sign up button on the navigation bar-->
+            <div class="modal-header">
+                <h5 class="modal-title">Buy now</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p class="lead text-center">
+                    Select the size of the product.
+                </p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="card-deck mb-3">
+                                <div class="card mb-4 box-shadow text-center">
+                                    <div class="card-header">
+                                        <h4 class="font-weight-normal">Small</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <h1 class="card-title pricing-card-title">100TL</h1>
+                                        <p>1x1 meter</p>
+                                        <button type="button" class="btn btn-lg btn-info text-light">Purchase</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md">
+                            <div class="card-deck mb-3">
+                                <div class="card mb-4 box-shadow text-center">
+                                    <div class="card-header">
+                                        <h4 class="font-weight-normal">Medium</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <h1 class="card-title pricing-card-title">400TL</h1>
+                                        <p>2x2 meters</p>
+                                        <button type="button" class="btn btn-lg btn-info text-light">Purchase</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md">
+                            <div class="card-deck mb-3">
+                                <div class="card mb-4 box-shadow text-center">
+                                    <div class="card-header">
+                                        <h4 class="font-weight-normal">Large</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <h1 class="card-title pricing-card-title">900TL</h1>
+                                        <p>3x3 meters</p>
+                                        <button type="button" class="btn btn-lg btn-info text-light">Purchase</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+</div>
+
+
+<!--Footer-->
+<div class="container bg-dark text-light">
+    <footer class="d-flex sjustify-content-between align-items-center py-3 my-3">
+      <p class="col-md mb-0 text-secondary">&copy; 2022 Cem Reis</p>
+  
+      <a href="#" class="ms-auto">
+        <img src="../img/logo.png" alt="logo" class="img-fluid me-5" width="50" height="50">
+      </a>
+  
+      <ul class="nav col-md justify-content-end">
+        <li class="nav-item px-2">
+            <a href="https://github.com/cemreis0" target="_blank">
+                <i class="bi bi-github"></i>
+            </a>
+        </li>
+        <li class="nav-item px-2">
+            <a href="https://www.linkedin.com/in/cem-reis-829b7a1b3/" target="_blank">
+                <i class="bi bi-linkedin"></i>
+            </a>
+        </li>
+        <li class="nav-item px-2">
+            <a href="https://twitter.com/cemmreis" target="_blank">
+                <i class="bi bi-twitter"></i>
+            </a>
+        </li>
+        <li class="nav-item px-2">
+            <a href="https://www.instagram.com/cemreis0/?hl=tr" target="_blank">
+                <i class="bi bi-instagram"></i>
+            </a>
+        </li>
+        <li class="nav-item px-2">
+            <a href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=CllgCJlFCsrWfrgHPjzqrCHrLGjxmjvGpLsTHNFtVbZFGhTjFTgGvCsGWCXxqDfZpSZbxVKCkDB" target="_blank">
+                <i class="bi bi-envelope"></i>
+            </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous">
+</script>
+
+</body>
+
+</html>
